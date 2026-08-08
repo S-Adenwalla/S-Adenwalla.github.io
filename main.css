@@ -1,33 +1,134 @@
-<html>
-
-    <head>
-
-        <script type="text/x-mathjax-config">
-  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
-</script>
-<script type="text/javascript"
-  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-
-<style>
-:target {
-    border: 2px solid #D4D4D4;
-    background-color: #e5eecc;
+html {
+    background: #e6e9e9;
+    background-image: linear-gradient(270deg, #e6e9e9 0%, #d8dddd 100%);
+    -webkit-font-smoothing: antialiased;
 }
 
+body {
+    margin: 0 auto;
+    padding: 2em 2em 4em;
+    max-width: 870px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    color: #545454;
+    background: #fff;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+}
 
+.top {
+    margin-bottom: 2em;
+}
 
-a.simple:link {display:inline;width:120px;font-weight:normal;color:#0000FF;background-color:transparent;text-align:right;padding:0px;text-decoration:none;text-transform:none;}
-a.simple:visited {display:inline;width:120px;font-weight:normal;color:#0000FF;background-color:transparent;text-align:right;padding:0px;text-decoration:underline;text-transform:none;}
-a.simple:hover {display:inline;width:120px;font-weight:normal;color:#0000FF;background-color:transparent;text-align:right;padding:0px;text-decoration:underline;text-transform:none;}
-</style>
+.header-inner {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 30px;
+}
 
+h1, h2, h3, h4, h5, h6 {
+    color: #222;
+    font-weight: 600;
+    line-height: 1.3em;
+}
 
+h1 {
+    margin: 0;
+    font-size: 2em;
+}
 
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Sarosh Adenwalla</title>
-        <meta name="description" content="Sarosh Adenwalla academic profile.">
-        <meta name="keywords" content="sarosh, adenwalla, warwick, liverpool, combinatorics, discrete, graph, number theory, Sylvester, Zamareav">
-        <link rel="stylesheet" href="main.css">
-    </head>
+h3 {
+    margin-top: 2em;
+}
+
+h4 {
+    margin-top: 1.6em;
+    margin-bottom: .8em;
+}
+
+.affiliation {
+    margin-top: 3px;
+    color: #666;
+}
+
+.profile {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+    margin: 0;
+    box-shadow: 0 1px 5px rgba(0,0,0,.12);
+}
+
+a {
+    color: #0083e8;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+details {
+    margin: 1em 0;
+}
+
+summary {
+    cursor: pointer;
+    padding: 2px 0;
+}
+
+summary a {
+    display: inline;
+    color: #0000ee;
+    font-weight: normal;
+    background: transparent;
+    padding: 0;
+    text-decoration: none;
+}
+
+summary a:hover {
+    text-decoration: underline;
+}
+
+.abstract {
+    margin: .8em 0 1.5em;
+    padding: 0 1em;
+    color: #777;
+}
+
+i {
+    color: #666;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 1.25em 1.25em 3em;
+    }
+
+    .header-inner {
+        align-items: flex-start;
+    }
+
+    .profile {
+        width: 125px;
+        height: 125px;
+    }
+
+    h1 {
+        font-size: 1.65em;
+    }
+}
+
+@media (max-width: 430px) {
+    .header-inner {
+        display: block;
+    }
+
+    .profile {
+        margin-top: 18px;
+        width: 150px;
+        height: 150px;
+    }
+}
